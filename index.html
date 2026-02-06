@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Penser est s'Indigner - Lauresie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;500;600;700&family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: {
+                DEFAULT: '#FEFBF6',
+                warm: '#FFF5E4',
+              },
+              sage: {
+                DEFAULT: '#3A5A40',
+                light: '#588157',
+              },
+              sand: {
+                DEFAULT: '#E9C46A',
+                orange: '#F4A261',
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #FEFBF6;
+        color: #2D2D2D;
+        scroll-behavior: smooth;
+      }
+      h1, h2 {
+        font-family: 'Playfair Display', serif;
+      }
+      .handwritten-brand {
+        font-family: 'Great Vibes', cursive;
+      }
+      .blog-title {
+        font-family: 'Dancing Script', cursive;
+      }
+      .caveat {
+        font-family: 'Caveat', cursive;
+      }
+      
+      .gradient-text-warm {
+        background: linear-gradient(135deg, #3A5A40 0%, #F4A261 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      /* Floating animations */
+      @keyframes float-slow {
+        0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.3; }
+        50% { transform: translateY(-30px) rotate(15deg); opacity: 0.6; }
+      }
+      .floating-icon {
+        position: absolute;
+        pointer-events: none;
+        animation: float-slow 8s ease-in-out infinite;
+      }
+      
+      .cursor-blink {
+        display: inline-block;
+        width: 3px;
+        height: 1em;
+        background-color: #F4A261;
+        margin-left: 4px;
+        vertical-align: middle;
+        animation: blink 1s infinite;
+      }
+      @keyframes blink {
+        50% { opacity: 0; }
+      }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
