@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ArrowDown, Flower, Leaf, Bird, Sun, Heart, Sparkles } from 'lucide-react';
 
 const RotatingText: React.FC = () => {
-  const words = ["s'Indigner", "Résister", "Agir", "Grandir", "Évoluer"];
+  const words = ["s'Indigner", "Résister", "Prendre des Profits","Hold Solana", "une valeur : $", "Je déconne ma chérie, ça se modifie ;)", "Agir", "Grandir", "Évoluer"];
   const [index, setIndex] = useState(0);
   const [subIndex, setSubIndex] = useState(0);
   const [reverse, setReverse] = useState(false);
