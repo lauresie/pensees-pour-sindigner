@@ -1,4 +1,3 @@
-# Lauresie
+# Lauresie 🫧
 
-- Lauresie Blog
-- Penser est s'indigner
+> ## blog anti **résignation**
